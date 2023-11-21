@@ -1,0 +1,33 @@
+$images: 0 'g1', 1 'g2', 2 'g3', 3 'g4', 4 'g5';
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 17px;
+  background-color: #182428;
+  .item {
+    width: 184px;
+    height: 188px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @each $n, $img in $images {
+      &:nth-child(1n + #{$n}) {
+        background-image: url('../../../../public/small/genre_menu/#{$img}.png');
+      }
+    }
+    p {
+      padding: 20px 23px;
+      background-color: rgba(24, 36, 40, 0.66);
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}

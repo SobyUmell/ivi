@@ -1,0 +1,17 @@
+.cards {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#6b777b8b, #182428);
+  background-color: #182428;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .container {
+    width: 100%;
+  }
+}
+

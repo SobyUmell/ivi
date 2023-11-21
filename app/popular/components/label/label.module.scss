@@ -1,0 +1,13 @@
+.label {
+  font-family: var(--font-inter);
+  width: 100%;
+  padding: 14px 0;
+  background-color: #182428;
+  div {
+    max-width: 1300px;
+    margin: 0 auto;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,60 @@
+$black: 'b1', 'b2', 'b3';
+$white: 'w1', 'w2', 'w3';
+@each $b in $black {
+  .black##{$b} {
+    .img {
+      background-image: url('../../../../public/small/blackwhite/#{$b}.png');
+    }
+  }
+}
+@each $w in $white {
+  .white##{$w} {
+    .img {
+      background-image: url('../../../../public/small/blackwhite/#{$w}.png');
+    }
+  }
+}
+
+.black, .white {
+  background-color: #182428;
+  padding: 41px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    .img {
+      width: 487px;
+      height: 656px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .content {
+      max-width: 586px;
+      font-size: 25px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.white {
+  background-color: #EEFBFF;
+  .container {
+    .img {
+      order: 2;
+    }
+    .content {
+      color: #182428;
+    }
+  }
+  
+}

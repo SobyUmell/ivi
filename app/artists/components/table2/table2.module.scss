@@ -1,0 +1,16 @@
+.table2 {
+  width: 100%;
+  height: 715px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEFBFF;
+  .artists {
+    width: 1263px;
+    height: 567px;
+    background-image: url('../../../../public/large/artists.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

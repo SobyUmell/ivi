@@ -1,0 +1,46 @@
+.gallery {
+  width: 100%;
+  background-color: rgb(230, 245, 251);
+  .block {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 80px;
+    &:nth-child(1n) {
+      background-image: url('../../../../public/large/artisits_bgs/art1.png'), url('../../../../public/large/artisits_bgs/port1.png');
+      background-position: right, 100px center;
+      background-size: contain, 35%;
+    }
+    &:nth-child(2n) {
+      background-image: url('../../../../public/large/artisits_bgs/art2.png'), url('../../../../public/large/artisits_bgs/port2.png');
+      background-position: left, right 100px center;
+      background-size: contain, 35%;
+      justify-content: flex-start;
+    }
+    &:nth-child(3n) {
+      background-image: url('../../../../public/large/artisits_bgs/art3.png'), url('../../../../public/large/artisits_bgs/port3.png');
+      background-position: right, 100px center;
+      background-size: contain, 35%;
+    }
+    .content {
+      max-width: 480px;
+      height: 658px;
+      padding: 68px 20px 0 20px;
+      background-color: rgba(97, 97, 97, .38);
+      color: white;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 40px;
+      border-radius: 71px;
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

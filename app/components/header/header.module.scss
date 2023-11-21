@@ -1,0 +1,22 @@
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #182428;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .menu {
+    display: flex;
+    gap: 30px;
+    li {
+      list-style: none;
+      a {
+        font-family: var(--font-inter);
+        color: #D8E9E6;
+        font-size: 24px;
+        text-decoration: none;
+      }
+    }
+  }
+}
