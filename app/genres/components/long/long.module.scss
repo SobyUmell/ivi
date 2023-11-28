@@ -23,6 +23,7 @@ $white: 'w1', 'w2', 'w3';
     justify-content: space-between;
     align-items: center;
     max-width: 1300px;
+    gap: 15px;
     margin: 0 auto;
     .img {
       width: 487px;
@@ -41,6 +42,33 @@ $white: 'w1', 'w2', 'w3';
       h1 {
         font-size: 40px;
         margin-bottom: 30px;
+        line-height: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 863px) {
+  .black, .white {
+    padding: 41px;
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      .img {
+        display: none;
+      }
+      .content {
+        max-width: 586px;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        h1 {
+          font-size: 28px;
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -58,3 +86,4 @@ $white: 'w1', 'w2', 'w3';
   }
   
 }
+

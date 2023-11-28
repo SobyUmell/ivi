@@ -55,3 +55,20 @@
     border-radius: 20px;
   }
 }
+
+@media (max-width: 473px) {
+  .swiper {
+    width: 100%;
+    padding: 20px;
+    height: 600px;
+  }
+  .cardbox {
+    height: 700px;
+  }
+}
+@media (max-width: 725px) {
+  .swiper {
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -1,7 +1,7 @@
 .label {
   font-family: var(--font-playfair-display);
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 20px;
   background-color: #182428;
   div {
     max-width: 1300px;
@@ -10,5 +10,12 @@
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
+  }
+}
+@media (max-width: 600px) {
+  .label {
+    div {
+      font-size: 24px;
+    }
   }
 }

@@ -15,8 +15,19 @@ const Cards = (): JSX.Element => {
       <div className={styles.cards}>
         <div className={styles.container}>
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={30}
+            breakpoints={{
+              800: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 3,
+              },
+              1400: {
+                slidesPerView: 4,
+              }
+            }}
             centeredSlides={true}
             navigation={true}
             modules={[Navigation]}

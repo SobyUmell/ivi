@@ -46,3 +46,49 @@ $figures: 'fig1', 'fig2', 'fig3', 'fig4', 'fig5';
 
 }
 
+
+
+@media (max-width: 1232px) {
+  .types {
+    .fig {
+      display: none;
+    }
+    .block {
+      max-width: 751px;
+      width: 100%;
+      margin: 0 auto;
+      height: fit-content;
+      border: 0 solid black;
+      background-color: transparent;
+      position: relative;
+      .content {
+        width: 100%;
+        max-height: 600px;
+        overflow: scroll;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 15px;
+
+        h3 {
+          font-size: 35px;
+          margin-bottom: 20px;
+        }
+        p {
+          line-height: 100%;
+        }
+        @each $col, $color in $colors {
+          &##{$col} {
+            background-color: $color;
+          }
+        }
+      }
+    }
+    
+  
+  }
+  
+}

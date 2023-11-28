@@ -11,7 +11,7 @@ const Types = (): JSX.Element => {
   return (
     <div className={styles.types}>
       <Label title='Популярные жанры  сейчас' />
-      <Swiper navigation={true} modules={[Navigation]} className="types-swiper">
+      <Swiper navigation={true} modules={[Navigation]} className="types-swiper" spaceBetween={0}>
         <SwiperSlide>
           <div className={styles.fig} id={styles.fig1}></div>
           <div className={styles.block}>

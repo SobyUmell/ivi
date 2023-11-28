@@ -3,10 +3,12 @@ $images: 0 'g1', 1 'g2', 2 'g3', 3 'g4', 4 'g5';
 .menu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 41px 17px;
   background-color: #182428;
+  flex-wrap: wrap;
+  gap: 20px;
   .item {
     width: 184px;
     height: 188px;

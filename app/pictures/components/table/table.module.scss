@@ -106,3 +106,13 @@ $optionDefaultColours: url('../../../../public/large/pictures/art1.jpg'), url('.
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .table {
+    .artists {
+      .options {
+        height:620px;
+      }
+    }
+  }
+}

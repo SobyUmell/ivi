@@ -6,11 +6,20 @@
   justify-content: center;
   background-color: #EEFBFF;
   .artists {
-    width: 1263px;
+    flex: 0 1 1263px;
+    padding: 20px;
     height: 567px;
     background-image: url('../../../../public/large/artists.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  
+}
+
+
+@media (max-width: 900px) {
+  .table2 {
+    height: 400px;
   }
 }

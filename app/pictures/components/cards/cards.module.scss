@@ -1,6 +1,7 @@
 .cards {
   width: 100%;
   height: 950px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,3 +16,9 @@
   }
 }
 
+@media (max-width: 780px) {
+  .cards {
+    height: 700px;
+
+  }
+}

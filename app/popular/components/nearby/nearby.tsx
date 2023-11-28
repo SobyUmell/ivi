@@ -15,8 +15,20 @@ const Nearby = (): JSX.Element => {
       <div className={styles.nearby}>
         <div className={styles.container}>
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             spaceBetween={30}
+            breakpoints={{
+              800: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 3,
+              },
+              1400: {
+                slidesPerView: 4,
+              }
+            }}
+            
             centeredSlides={true}
             navigation={true}
             pagination={{
